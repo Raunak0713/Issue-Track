@@ -17,8 +17,8 @@ const IssueDetailPage = async ({ params } : Props) => {
     <div>
         <p>{issue.title}</p>
         <p>{issue.description}</p>
-        <p>Status : {issue.status}</p>
-        <p>Created At : {issue.createdAt.toString()}</p>
+        <p>{issue.status}</p>
+        <p>{issue.createdAt.toDateString()}</p>
     </div>
   )
 }
